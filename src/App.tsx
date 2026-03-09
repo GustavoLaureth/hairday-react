@@ -100,15 +100,15 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="w-full lg:w-3/4 lg:m-3 py-20 px-28 flex flex-col items-center gap-8">
-        <div className="w-full flex justify-between items-center">
-          <div className="flex flex-col gap-1">
+      <div className="w-full lg:w-3/4 lg:m-3 py-20 px-10 lg:px-28 flex flex-col items-center gap-8">
+        <div className="w-full flex flex-col lg:flex-row gap-8 justify-between items-center">
+          <div className="w-full flex flex-col gap-1">
             <h1 className="text-gray-100 text-title-lg">Sua agenda</h1>
             <p className="text-gray-300 text-body-sm">
               Consulte os seus cortes de cabelo agendados por dia
             </p>
           </div>
-          <div>
+          <div className="w-full lg:w-38">
             <input
               type="date"
               className="w-full h-12 bg-gray-800 border border-gray-500 rounded-lg px-4 py-3 text-gray-200"
