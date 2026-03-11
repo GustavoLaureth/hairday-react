@@ -1,4 +1,4 @@
-import Logo from "./assets/logo/Logo.svg";
+import Logo from "./assets/logo/logo.svg";
 import TrashIcon from "./assets/icons/trash.svg";
 import SunIcon from "./assets/icons/sun.svg";
 import CloudIcon from "./assets/icons/cloud.svg";
