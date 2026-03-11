@@ -281,25 +281,31 @@ function App() {
               </div>
             </div>
             <div className="w-full flex flex-col px-5 py-5 items-center gap-0.5">
-              {morningSchedule.map((item) => (
-                <div
-                  key={item.id}
-                  className="w-full flex justify-between items-center h-8"
-                >
-                  <div className="flex gap-5">
-                    <p className="text-gray-200 text-title-md w-12 text-center">
-                      {item.time}
-                    </p>
-                    <p className="text-gray-200 text-body-md">{item.client}</p>
-                  </div>
-                  <button
-                    onClick={() => removeSchedule(item.id)}
-                    className="cursor-pointer w-4 h-4"
+              {morningSchedule.length === 0 ? (
+                <p className="text-body-sm text-gray-300 w-full">Nenhum agendamento para este período</p>
+              ) : (
+                morningSchedule.map((item) => (
+                  <div
+                    key={item.id}
+                    className="w-full flex justify-between items-center h-8"
                   >
-                    <img src={TrashIcon} alt="" />
-                  </button>
-                </div>
-              ))}
+                    <div className="flex gap-5">
+                      <p className="text-gray-200 text-title-md w-12 text-center">
+                        {item.time}
+                      </p>
+                      <p className="text-gray-200 text-body-md">
+                        {item.client}
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => removeSchedule(item.id)}
+                      className="cursor-pointer w-4 h-4"
+                    >
+                      <img src={TrashIcon} alt="" />
+                    </button>
+                  </div>
+                ))
+              )}
             </div>
           </div>
           <div className="flex flex-col w-full rounded-lg border border-gray-600">
@@ -313,25 +319,31 @@ function App() {
               </div>
             </div>
             <div className="w-full flex flex-col px-5 py-5 items-center gap-0.5">
-              {afternoonSchedule.map((item) => (
-                <div
-                  key={item.id}
-                  className="w-full flex justify-between items-center h-8"
-                >
-                  <div className="flex gap-5">
-                    <p className="text-gray-200 text-title-md w-12 text-center">
-                      {item.time}
-                    </p>
-                    <p className="text-gray-200 text-body-md">{item.client}</p>
-                  </div>
-                  <button
-                    onClick={() => removeSchedule(item.id)}
-                    className="cursor-pointer w-4 h-4"
+              {afternoonSchedule.length === 0 ? (
+                <p className="text-body-sm text-gray-300 w-full">Nenhum agendamento para este período</p>
+              ) : (
+                afternoonSchedule.map((item) => (
+                  <div
+                    key={item.id}
+                    className="w-full flex justify-between items-center h-8"
                   >
-                    <img src={TrashIcon} alt="" />
-                  </button>
-                </div>
-              ))}
+                    <div className="flex gap-5">
+                      <p className="text-gray-200 text-title-md w-12 text-center">
+                        {item.time}
+                      </p>
+                      <p className="text-gray-200 text-body-md">
+                        {item.client}
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => removeSchedule(item.id)}
+                      className="cursor-pointer w-4 h-4"
+                    >
+                      <img src={TrashIcon} alt="" />
+                    </button>
+                  </div>
+                ))
+              )}
             </div>
           </div>
           <div className="flex flex-col w-full rounded-lg border border-gray-600">
@@ -345,25 +357,31 @@ function App() {
               </div>
             </div>
             <div className="w-full flex flex-col px-5 py-5 items-center gap-0.5">
-              {nightSchedule.map((item) => (
-                <div
-                  key={item.id}
-                  className="w-full flex justify-between items-center h-8"
-                >
-                  <div className="flex gap-5">
-                    <p className="text-gray-200 text-title-md w-12 text-center">
-                      {item.time}
-                    </p>
-                    <p className="text-gray-200 text-body-md">{item.client}</p>
-                  </div>
-                  <button
-                    onClick={() => removeSchedule(item.id)}
-                    className="cursor-pointer w-4 h-4"
+              {nightSchedule.length === 0 ? (
+                <p className="text-body-sm text-gray-300 w-full">Nenhum agendamento para este período</p>
+              ) : (
+                nightSchedule.map((item) => (
+                  <div
+                    key={item.id}
+                    className="w-full flex justify-between items-center h-8"
                   >
-                    <img src={TrashIcon} alt="" />
-                  </button>
-                </div>
-              ))}
+                    <div className="flex gap-5">
+                      <p className="text-gray-200 text-title-md w-12 text-center">
+                        {item.time}
+                      </p>
+                      <p className="text-gray-200 text-body-md">
+                        {item.client}
+                      </p>
+                    </div>
+                    <button
+                      onClick={() => removeSchedule(item.id)}
+                      className="cursor-pointer w-4 h-4"
+                    >
+                      <img src={TrashIcon} alt="" />
+                    </button>
+                  </div>
+                ))
+              )}
             </div>
           </div>
         </div>
